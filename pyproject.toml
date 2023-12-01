@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gd-toolbox"
+version = "0.1.0"
+description = ""
+authors = ["Pavlo Suslykov <psuslykov@godaddy.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+boto3 = "^1.33.5"
+gd-auth = "^1.2.3"
+
+
+[[tool.poetry.source]]
+name = "artifactory"
+url = "https://gdartifactory1.jfrog.io/artifactory/api/pypi/python-virt/simple"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

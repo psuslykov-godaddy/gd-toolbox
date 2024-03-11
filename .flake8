@@ -1,0 +1,10 @@
+[flake8]
+exclude =
+    __pycache__
+    venv
+    .venv
+    cdk.out
+max-line-length = 145
+statistics = True
+show-source = True
+count = True

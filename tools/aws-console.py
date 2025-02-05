@@ -18,7 +18,7 @@ import boto3
 
 def open_console(profile_name=None, echo_to_stdout=False):
     creds = boto3.Session(profile_name=profile_name).get_credentials()
-    url_credentials = dict(sessionId=creds.access_key, msessionKey=creds.secret_key, sessionToken=creds.token)
+    url_credentials = dict(sessionId=creds.access_key,sessionKey=creds.secret_key, sessionToken=creds.token)
 
     request_parameters = "?Action=getSigninToken"
     request_parameters += "&DurationSeconds=43200"
